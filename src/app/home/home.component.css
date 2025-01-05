@@ -1,0 +1,120 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f8ff;
+  color: #333;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.buzon h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.buzon form {
+  background-color: #f9f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.buzon textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+.buzon button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buzon button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.contenedor {
+  background-color: white;
+}
+
+
+
+/* Estilo del carrusel */
+.carousel {
+  width: 100%;           /* Ancho del carrusel */
+  /*max-width: 800px;     /* Ancho máximo */
+  overflow: hidden;     /* Ocultar contenido fuera del área visible */
+  white-space: nowrap;  /* Asegura que el texto esté en una sola línea */
+}
+
+/* Contenedor de las palabras dentro del carrusel */
+.carousel-container {
+  display: inline-block;
+  animation: moveWords 24s linear infinite; /* Animación que se repite infinitamente */
+}
+
+.carousel-container span {
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 50px;   /* Espacio entre las palabras */
+  color: #333;
+  font-weight: bold;
+}
+
+/* Animación de movimiento de las palabras */
+@keyframes moveWords {
+  0% {
+      transform: translateX(0); /* Comienza fuera del borde derecho */
+  }
+  100% {
+      transform: translateX(-100%); /* Termina fuera del borde izquierdo */
+  }
+}
+
+.btn-regresar {
+  all: unset;
+  cursor: pointer;
+}

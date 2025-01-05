@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #d3daff6f;
+}
+
+header {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header .logo img {
+  max-width: 100%;
+}

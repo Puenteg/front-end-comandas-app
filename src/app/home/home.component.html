@@ -1,0 +1,35 @@
+<header>
+  <div class="logo">
+      <img src="./../../assets/img/logo.jpg" alt="Logo" width="150">
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="intro">
+        <h1>¿Qué vas a querer comer hoy?</h1>
+      <br>
+      <hr>
+        <div class="carousel">
+          <div class="carousel-container">
+            <button class="btn-regresar" (click)="hacerPedido.emit(false)">
+              <span *ngFor="let producto of productos">{{producto.nombre}}</span>
+            </button>
+          </div>
+      </div>
+      <hr>
+    </section>
+    <br><br>
+    <section class="buzon">
+        <h2>Buzón de Quejas y Sugerencias</h2>
+        <form>
+            <textarea placeholder="Escribe tus comentarios aquí..." rows="6"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+  </div>
+</main>
+
+<!-- <footer>
+  <p>&copy; 2025 Comandas APP | Todos los derechos reservados</p>
+</footer> -->

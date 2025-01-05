@@ -1,0 +1,2 @@
+<app-home *ngIf="isHomeVisible" (hacerPedido)="mostrarHome($event)"></app-home>
+<app-pedido *ngIf="!isHomeVisible" (regresar)="mostrarHome($event)"></app-pedido>
